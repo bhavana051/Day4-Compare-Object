@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>isSimilar Demo</title>
+  <style>
+    body{
+      background-image: url(bg.jpeg);
+    }
+    h2{
+      color: red;
+      text-align: center;
+      font-family: cursive;
+      font-size: 2rem;
+    }
+    #box{
+      width: 500px;
+      height: auto;
+      border: 2px solid white;
+      border-radius: 30px;
+      padding: 20px;
+      padding-top: 50px;
+      padding-left: 50px;
+      margin-left: 100px;
+      margin-top: 50px;
+      float: left;
+      
+    }
+    .lbl{
+      font-family: cursive;
+      font-size: large;
+      color: white;
+    }
+    #obj1{
+      border-radius: 20px;
+      width: 400px;
+      height: 40px;
+    }
+    #obj2{
+      border-radius: 20px;
+      width: 400px;
+      height: 40px;
+    }
+    button{
+      width: 100px;
+      height: 50px;
+      color: white;
+      background-color: brown;
+      border: 2px solid wheat;
+      border-radius: 20px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      
+    }
+    #result{
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      border: 5px solid white;
+      float: right;
+      margin-right: 250px;
+      margin-top: 150px;
+      color: white;
+      line-height: 200PX;
+      text-align: center;
+      font-family: cursive;
+      font-size: 4rem;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h2><u>Comparing 2 Objects Returning TRUE or FALSE</u></h2>
+    <div id="box">
+      <label class="lbl">Enter Object-1</label><br><br>
+      <input type="text" id="obj1"><br><br>
+      <label class="lbl">Enter Object-2</label><br><br>
+      <input type="text" id="obj2"><br><br>
+     <center><button  onclick="isSimilar()">Compare</button></center> </div>
+      <span id="result"></span>
+        
+  <script src="isSimiller.js"></script>
+</body>
+</html>
